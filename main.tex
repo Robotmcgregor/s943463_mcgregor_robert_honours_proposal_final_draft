@@ -1,0 +1,96 @@
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage{natbib}
+
+% images
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+% landscape
+\usepackage{lscape}
+
+\usepackage{multicol}
+%\usepackage{rotating}
+\usepackage{lscape}
+\usepackage{parskip}
+\usepackage{csquotes}% Recommended
+% for padding tables
+\usepackage{array}
+%\usepackage{wrapfig, lipsum}
+\usepackage{tikz}
+\usepackage{blindtext}
+\usepackage{lipsum}
+\usepackage{tabularx}
+\usepackage{tabularx,booktabs}
+\usepackage{rotating}
+%  ------------------------------------------- CDU specific -----------------------------------------
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ left=3cm, % should be 4 for CDU
+ top=2.5cm,
+ bottom=2.5cm,
+ right=2.5cm
+ }
+ 
+% CDU 1.5 line space
+\usepackage{setspace}
+\onehalfspacing
+
+%\usepackage{siunitx}
+\usepackage[LGRgreek]{mathastext}
+
+% ---------------------------------------- working before here ---------------------------------------------------
+
+%font in table
+\usepackage[T1]{fontenc}
+\usepackage{tgbonum}
+
+% table caption formatting
+\usepackage[labelfont=bf]{caption}
+\renewcommand*\familydefault{\sfdefault} %% Only if the base font of the document is to be sans serif
+\captionsetup[table]{labelsep=period, 
+         justification=raggedright, singlelinecheck=off}
+\usepackage{threeparttable}
+
+% -----------------------------------------------------------------------------------------------------------------
+
+\bibliographystyle{agsm}
+\title{Bibliography management: \texttt{natbib} package}
+\author{Robert McGregor}
+\date {October 2021}
+
+\begin{document}
+
+% \titleformat{\section}
+%   {\fontfamily{qhv}\selectfont\fontsize{16}{11}\bfseries}{\thesection}{1em}{}
+  
+
+%\maketitle
+\input{sec/cover_page}
+
+%\begin{flushleft}
+{\fontfamily{qhv}\selectfont
+
+\newpage
+\tableofcontents
+\newpage
+\listoffigures
+\listoftables
+
+\input{sec/abbreviations}
+\input{sec/introduction}
+\input{sec/aims_objectives}
+\input{sec/methodology}
+\input{sec/ethics}
+\input{sec/resources}
+\input{sec/timeline}
+
+
+
+\medskip
+\newpage
+\bibliography{references}
+}
+%\end{flushleft}
+\end{document}

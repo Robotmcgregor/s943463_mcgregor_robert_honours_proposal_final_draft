@@ -1,0 +1,34 @@
+%\begin{landscape}
+
+{\renewcommand{\arraystretch}{2}%
+\begin{sidewaystable}[]%h!]
+\caption{List of the SI calculations that will be performed on the SR bands values and applied to the modelling. Table has been reproduced from \cite{staben2016}}
+\label{table:si}
+\centering
+
+%\begin{tabular*}{\textheight}{c @{\extracolsep{\fill}} c c c}
+
+%\begin{tabular}{c c c} 
+\begin{tabular*}{\textwidth}{c @{\extracolsep{\fill}} c c c}
+ \hline
+Spectral Index & Formula & Reference \\[1ex] 
+ \hline
+ Normalised Difference Vegetation Index & $NDVI\ = \frac{\rho_{NIR} - \rho_{Red}}{\rho_{NIR} + \rho_{Red}}$ & \citep{tucker1979}  \\ 
+ Green Soil Adjusted Index & $GSAVI\ = \frac{\rho_{NIR} - \rho_{Green}}{\rho_{NIR} + \rho_{Green} + L} * (1 + L)$ &  \citep{sripada2006} \\ 
+  Green Normalised Difference Vegetation Index & $GNDVI\ = \frac{\rho_{NIR} - \rho_{Green}}{\rho_{NIR} + \rho_{Green}}$ & \citep{bushnagel1993} \\ 
+ Chlorophyll Vegetation Index & $CVI = \frac{\rho_{NIR}}{\rho_{Green}} \times \frac{\rho_{Red}}{\rho_{Green}}$ & \citep{vincini2008} \\ 
+ Normalised Difference Greenness Index & $NDGI = \frac{\rho_{Green} - \rho_{Red}}{\rho_{Green} + \rho_{Red}}$ & \citep{bannarietal1995} \\
+ Normalised Burn Ratio SWIR2 & $NBR = \frac{\rho_{NIR} - \rho_{SWIR2}}{\rho_{NIR} + \rho_{SWIR2}}$ & \citep{leietal2011} \\
+  Normalised Burn Ratio SWIR1 & $NDII = \frac{\rho_{NIR} - \rho_{SWIR1}}{\rho_{NIR} + \rho_{SWIR1}}$ & \citep{leietal2011} \\
+  Green Difference Vegetaion Index & $GDVI = \rho_{NIR} - \rho_{Green}$ & \citep{sripada2006} \\
+  Modified Soil Adjusted Vegetion Index & $MSAVI = \frac{2 \times \rho_{NIR} + 1 - \sqrt{(2 \times \rho_{NIR} + 1)^{2} -8 \times (\rho_{NIR} - \rho_{Red}))}}{2}$ & \citep{qietal1994} \\
+  Difference Vegetation Index & $DVI\ = NIR - Red$ & \citep{tucker1979} \\
+  Soil Adjusted Vegetation Index & $SAVI\ = \frac{\rho_{NIR} - \rho_{Red}}{\rho_{NIR} + \rho_{Red} + L} * (1 + L)$ & \citep{huete1988} \\[2ex]
+  Modified Simple Ratio & $MSR\ = \frac{\frac{\rho_{NIR}}{\rho_{Red}} - 1}{\sqrt{\frac{\rho_{NIR}}{\rho_{Red}}} + 1}$ & \citep{chen1996} \\[2ex] 
+ \hline
+%\end{tabular*}
+\end{tabular*}
+\end{sidewaystable}
+}
+
+%\end{landscape}
